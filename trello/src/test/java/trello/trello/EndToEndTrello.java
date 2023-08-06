@@ -21,6 +21,7 @@ public class EndToEndTrello extends BaseClass{
 		webdriverutils.implicitWait(driver);
 		HomePage homepage=new HomePage(driver);
 		homepage.getloginButton().click();
+		//jigyunji
 		
 		LoginToTrelloPage logintotrellopage=new LoginToTrelloPage(driver);
 		logintotrellopage.getEmailTextField().sendKeys(fileutils.readDataFromPropertyFile("email"));
